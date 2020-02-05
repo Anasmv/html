@@ -1,9 +1,9 @@
 <?php
     $message='hi';
-    $from='shafeeque96km@gmail.com';
+    $from='frommail@gmail.com';
     $subject ='8956556';
-    $to='anasmv886@gmail.com';
-    //shafeeque96km@gmail.com
+    $to='tomail@gmail.com';
+    //tomail@gmail.com
     $headers = "From: ".$from."\r\n Reply-To: .$to.";
     echo $maa=mail($to,$subject,$message,$headers);
     if($maa)
