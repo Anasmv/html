@@ -1,0 +1,16 @@
+<?php
+    $message='hi';
+    $from='shafeeque96km@gmail.com';
+    $subject ='8956556';
+    $to='anasmv886@gmail.com';
+    //shafeeque96km@gmail.com
+    $headers = "From: ".$from."\r\n Reply-To: .$to.";
+    echo $maa=mail($to,$subject,$message,$headers);
+    if($maa)
+    {
+        echo"<script>alert('SENDING SUCCESSFULLY')</script>";
+    }
+    else
+    {
+        //echo "<h1>MSG NOT SEND</h1>";
+    }
