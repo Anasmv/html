@@ -1,0 +1,27 @@
+<section id="shopping-list">
+	<h1>
+		Shopping List
+		<span class="total">(2 items)</span>
+	</h1>
+	<input class="new">
+	<button class="add">Add Item</button>
+	<ul class="items">
+		<li>Eggs</li>
+		<li>Butter</li>
+	</ul>
+</section>
+<script id="rendered-js">
+const button = document.querySelector('button.add');
+const input = document.querySelector('input.new');
+const itemsList = document.querySelector('ul.items');
+const totalText = document.querySelector('span.total');
+
+button.addEventListener('click', function () {
+  const newItem = document.createElement('li');
+  newItem.innerHTML = input.value;
+  itemsList.appendChild(newItem);
+  totalText.innerHTML = `(${itemsList.childElementCount} items)`;
+  input.value = '';
+});
+//# sourceURL=pen.js
+</script>
